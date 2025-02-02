@@ -39,7 +39,18 @@
     <spring-format.version>0.0.43</spring-format.version>
 
   </properties>
-
+  <distributionManagement>
+   <repository>
+      <id>central</id>
+      <name>libs-release</name>
+      <url>http://54.204.169.144:8082/artifactory/libs-release-local</url>
+   </repository>
+   <snapshotRepository>
+      <id>snapshots</id>
+      <name>libs-snapshot</name>
+      <url>http://54.204.169.144:8082/artifactory/libs-snapshot-local</url>
+   </snapshotRepository>
+</distributionManagement>
   <dependencies>
     <!-- Spring and Spring Boot dependencies -->
     <dependency>
